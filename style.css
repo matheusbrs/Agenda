@@ -1,0 +1,18 @@
+table{
+    width: 506px;
+    text-align: center;
+}
+
+#mensageError{
+    color: white;
+    background-color: red;
+    text-align: center;
+    display:none;
+}
+
+#contatoError{
+    color: white;
+    background-color: red;
+    text-align: center;
+    display:none;
+}

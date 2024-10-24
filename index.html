@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+
+<body>
+
+    <section class="container box">
+        <h1 class="has-text-centered pt-3 pb-3 is-size-2">Agenda</h1>
+
+        <section class="is-flex is-align-items-center is-justify-content-center">
+            <form class="pt-3 pb-3">
+                <fieldset class=" pt-3 pb-3">
+                    <input class=" has-text-centered input is-link" type="text" placeholder="Nome" id="nome">
+                    <input class="has-text-centered input is-link" type="text" placeholder="(11) 98888-8888"
+                        id="contato" maxlength="11">
+                        <p id="mensageError">Esse contato ja foi adicionado</p>
+                        <p id="contatoError">Número de telefone deve conter no minimo 11 digitos</p>
+                </fieldset>
+                <fieldset class="has-text-centered">
+                    <input class="button is-primary" type="submit" value="Cadastrar contato" id="cadastra">
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="is-flex is-align-items-center is-justify-content-center">
+            <table border="1" class="table">
+                <thead>
+                    <td>nome</td>
+                    <td>Número de contato</td>
+                    </thear>
+                <tbody>
+                    <td id="nome">---</td>
+                    <td id="numero-contato">---</td>
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
